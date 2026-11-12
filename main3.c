@@ -5,7 +5,8 @@
 int main()
 {
     int arr[20], arr2[20];
-    autofill_arr(arr, 20);
+    int n_in = read_arr(arr,20);
+    if (n_in <= 0) return 1;
 
     int n = filter_true(arr, 20, arr2);
     
