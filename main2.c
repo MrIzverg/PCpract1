@@ -5,8 +5,11 @@
 int main()
 {
     int arr[45];
-    autofill_arr(arr, 45);
-    int sum = sum_range(arr, 1, 44);
-    print_int(sum);
+    int n = read_arr(arr, 45);
+    if (n <= 0) return 1;
+
+    int result = sum_range(arr,n);
+    printf("Сумма элементов: ");
+    print_int(result);
     return 0;
 }
