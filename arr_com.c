@@ -7,7 +7,7 @@ int read_arr(int *arr, int max_size)
     printf("Введите количество элементов (не больше %d): ", max_size);
     if (scanf("%d", n) != 1 || n < 0 || n > max_size)
     {
-        print("Ошбика: некорректное количество");
+        printf("Ошбика: некорректное количество");
         return 0;
     }
     printf("Введите %d элементов через пробел:\n", n);
